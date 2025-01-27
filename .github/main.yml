@@ -1,0 +1,12 @@
+name: "Pipeline Workflow"
+run-name: "Pipeline Workflow RN"
+
+on:[push]
+
+jobs:
+  Explore-Github-Actions:
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo "job was triggered!!!"
+
+    
