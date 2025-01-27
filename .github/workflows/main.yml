@@ -5,7 +5,17 @@ on:
     branches:
       - 'master'
 jobs:
-  Explore-Github-Actions:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "job was triggered!!!"
+      - run: echo "build!!!"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "test!!!"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "deploy!!!"
